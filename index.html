@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta author="Rebecca, Birgit, Sandra">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+  <body>
+      <!-- Kopfbereich mit Logo -->
+      <div id="header">
+          <img src="images/logo.jpg" width="280" height="126" alt="logo">
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+          <ul>
+              <!-- Eigene Seite nicht anklickbar -->
+              <li>Startseite</li>
+              <!-- Registrierung wuerde ich nicht ins Menue machen, siehe andere Seiten
+              <li><a class="register" id="register">Registrierung</a></li>
+              <li><a class="registerOrga" id="registerOrga" href="html/registerOrga.html">Event-Ersteller</a></li>
+              <li><a class="registerHelper" id="registerHelper" href="html/registerHelper.html">Helfer</a></li>-->
+
+              <li><a class="events" id="events">Events</a></li>
+              <li><a class="eventView" id="&uuml;versicht"href="html/eventView.html">Event &Uuml;bersicht</a></li>
+              <!-- Funktion erst nach erfolgter Anmeldung bei Berechtigung anbieten-->
+              <!--<li><a class="createEvent" id="createEvent" href="html/createEvent.html">Event erstellen</a></li>-->
+
+              <!-- Profilansichten direkt per PHP in der Seite loesen, Funktion erst nach Anmeldung anbieten
+              <li><a class="profile" id="orga" onclick="opensite" href="orgaProfile.html">Profil bearbeiten</a></li>
+              -->
+          </ul>
+          <!-- Formular für den Login, login.php wird dadurch aufgerufen-->
+          <form name="login" method="post" action="login.php">
+              <label for="username">Username:</label>
+              <input id="username" name="username" type="text" class="inputField"  value="">
+              <label for="password">Passwort:</label>
+              <input id="password" name="passwort" type="password" class="inputField" value="">
+
+              <input id="Submit" type="submit" class="button" value="Login">
+          </form>
+      </nav>
+
+      <br>
+      <!-- Seite fullEvent wird erst angezeigt beim Aufruf des Events -->
+      <a class="fullEvent" id="fullEvent" href="html/fullEvent.html">Eventdetail</a>
+      <br><br><br><br>
+
+      <!-- Fussbereich mit Verlinkung zum Impressum und Datenschutz -->
+      <footer>
+         <div id="footer"></div>
+              <a class="impressum" id="impressum" href="html/impressum.html">Impressum</a> |
+              <a class="datenschutz" id="datenschutz" href="html/datenschutz.html">Datenschutz</a>
+      </footer>
+  </body>
+</html>
